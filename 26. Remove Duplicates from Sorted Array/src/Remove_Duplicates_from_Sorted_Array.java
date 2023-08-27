@@ -44,7 +44,8 @@ public class Remove_Duplicates_from_Sorted_Array {
         int[] nums = {0,0,1,1,1,2,2,3,3,4};
         System.out.println(removeDuplicates(nums));
     }
-
+//Solution 1
+    /*
     public static int removeDuplicates(int[] nums) {
         int k = 1;
 
@@ -59,5 +60,23 @@ public class Remove_Duplicates_from_Sorted_Array {
         return k;
     }
 
+     */
 
+    //Solution 2
+    public static int removeDuplicates(int[] nums) {
+
+        if(nums.length == 0)
+            return 0;
+
+        int k = 1;
+        Arrays.sort(nums);
+
+        for(int i=1;i<nums.length;i++){
+            if(nums[i]>nums[k-1]) {
+                nums[k] = nums[i];
+                k++;
+            }
+        }
+        return k;
+    }
 }
