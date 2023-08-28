@@ -16,10 +16,19 @@ class Find_the_Index_of_the_First_Occurrence_in_a_String {
         Explanation: "leeto" did not occur in "leetcode", so we return -1.
          */
 
+
+        String haystack = "sadbutsad";
+        String needle = "sad";
+
+        System.out.println(strStr(haystack,needle));
+
     }
 
     public static int strStr(String haystack, String needle) {
 
-        return 0;
+        int firstIndex = haystack.indexOf(needle);
+
+        if(firstIndex>=0 & firstIndex<=haystack.length()) return firstIndex;
+        else return -1;
     }
 }
