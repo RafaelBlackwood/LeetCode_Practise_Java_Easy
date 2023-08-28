@@ -1,5 +1,4 @@
-public class Find_the_Index_of_the_First_Occurrence_in_a_String {
-
+class Find_the_Index_of_the_First_Occurrence_in_a_String {
     public static void main(String[] args){
         /*
         Given two strings needle and haystack, return the index of the first occurrence of needle in haystack,
@@ -21,5 +20,6 @@ public class Find_the_Index_of_the_First_Occurrence_in_a_String {
 
     public static int strStr(String haystack, String needle) {
 
+        return 0;
     }
 }
