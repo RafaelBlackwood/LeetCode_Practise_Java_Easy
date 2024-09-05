@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class Remove_Duplicates_from_Sorted_Array {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         /*
         Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place
          such that each unique element appears only once. The relative order of the elements should be kept the same.
@@ -41,18 +41,20 @@ public class Remove_Duplicates_from_Sorted_Array {
                 It does not matter what you leave beyond the returned k (hence they are underscores).
              */
 
-        int[] nums = {0,0,1,1,1,2,2,3,3,4};
+        int[] nums = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
         System.out.println(removeDuplicates(nums));
     }
+
+
 //Solution 1
-    /*
+
     public static int removeDuplicates(int[] nums) {
         int k = 1;
 
         Arrays.sort(nums);
 
-        for(int i=1;i<nums.length;i++){
-            if(nums[i]!=nums[k-1]) {
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] != nums[k - 1]) {
                 nums[k] = nums[i];
                 k++;
             }
@@ -60,9 +62,11 @@ public class Remove_Duplicates_from_Sorted_Array {
         return k;
     }
 
-     */
+}
+
 
     //Solution 2
+    /*
     public static int removeDuplicates(int[] nums) {
 
         if(nums.length == 0)
@@ -80,3 +84,4 @@ public class Remove_Duplicates_from_Sorted_Array {
         return k;
     }
 }
+ */

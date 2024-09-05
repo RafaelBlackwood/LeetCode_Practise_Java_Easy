@@ -27,6 +27,26 @@ public class Longest_Common_Prefix {
 
     }
 
+    public static String longestCommonPrefix(String[] strs) {
+        if (strs.length==0) return "";
+
+        Arrays.sort(strs);
+
+        int count = 0;
+
+        for(int j=0;j<strs[0].length();j++){
+            if(strs[0].charAt(j)==strs[strs.length-1].charAt(j)){
+             count+=1;
+            }
+            else{
+                break;
+            }
+        }
+        if(count == 0) return "";
+        else return strs[0].substring(0,count);
+
+    }
+
 //Solution 1
 /*
      public static String longestCommonPrefix(String[] strs) {
@@ -65,6 +85,7 @@ public class Longest_Common_Prefix {
  */
 
 //Solution 2
+    /*
 public static String longestCommonPrefix(String[] strs) {
     int count = 0;
     Arrays.sort(strs);
@@ -78,6 +99,7 @@ public static String longestCommonPrefix(String[] strs) {
 
     return start.substring(0, count);
 }
+     */
 
 
 //Solution 3

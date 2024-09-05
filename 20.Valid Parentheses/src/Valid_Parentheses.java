@@ -33,7 +33,7 @@ public class Valid_Parentheses {
        public static boolean isValid(String s) {
 
                boolean flag = true;
-               if (s.length() % 2 != 0) flag = false;  // Нечетное количество скобок, парные быть не могут
+               if (s.length() % 2 != 0) return false;  // Нечетное количество скобок, парные быть не могут
                else {
                        Stack<Character> stack = new Stack<>();  // Используем стек для сопоставления скобок
 
@@ -48,8 +48,7 @@ public class Valid_Parentheses {
                                {
                                        if (stack.isEmpty()) // то есть у нас есть закрывающая скобка без соответствующей открывающей
                                        {
-                                               flag = false;  // Нет открывающей скобки для закрывающей
-                                               break;
+                                               return false;
                                        }
                                        char topChar = stack.pop();
 

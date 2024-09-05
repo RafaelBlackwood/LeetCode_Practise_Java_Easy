@@ -65,8 +65,10 @@ public class Roman_to_Integer {
 
         for (int i = 0; i < s.length(); i++) {
 
-            if (i < s.length() - 1 && pair.get(s.charAt(i)) < pair.get(s.charAt(i + 1))) number -= pair.get(s.charAt(i));
-            else number += pair.get(s.charAt(i));
+            if (i < s.length() - 1 && pair.get(s.charAt(i)) < pair.get(s.charAt(i + 1)))
+                number -= pair.get(s.charAt(i));
+            else
+                number += pair.get(s.charAt(i));
 
         }
 
