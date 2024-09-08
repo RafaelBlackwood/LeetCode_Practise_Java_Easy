@@ -26,12 +26,26 @@ Follow up: Suppose there are lots of incoming s, say s1, s2, ...,
  if t has its subsequence. In this scenario,
   how would you change your code?
  */
-
-        isSubsequence();
+       String s = "aaaaaa";
+       String t= "bbaaaa";
+        System.out.println(isSubsequence(s,t));
     }
 
     public static boolean isSubsequence(String s, String t) {
+        int i = 0, j = 0;
 
+        // Iterate through both strings
+        while (i < s.length() && j < t.length()) {
+            // If characters match, move to the next character in `s`
+            if (s.charAt(i) == t.charAt(j)) {
+                i++;
+            }
+            // Always move to the next character in `t`
+            j++;
+        }
 
+        // If we have matched all characters of `s`, then `s` is a subsequence of `t`
+        return i == s.length();
     }
 }
+
