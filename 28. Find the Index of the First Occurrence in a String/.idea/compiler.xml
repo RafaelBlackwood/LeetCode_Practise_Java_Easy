@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="28. Find the Index of the First Occurrence in a String" options="--add-modules java.base" />
-    </option>
-  </component>
-</project>

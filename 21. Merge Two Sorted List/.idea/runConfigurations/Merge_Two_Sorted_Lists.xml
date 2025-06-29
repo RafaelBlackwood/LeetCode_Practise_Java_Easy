@@ -1,9 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Merge Two Sorted Lists" type="Application" factoryName="Application" activateToolWindowBeforeRun="false">
-    <option name="MAIN_CLASS_NAME" value="Solution" />
-    <module name="Merge Two Sorted List" />
-    <method v="2">
-      <option name="Make" enabled="true" />
-    </method>
-  </configuration>
-</component>
