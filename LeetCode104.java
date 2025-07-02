@@ -29,8 +29,8 @@ public class LeetCode104 {
 
      class Solution {
         public int maxDepth(TreeNode root) {
-            int left_depth;
-            int right_depth;
+            int left_depth = 0;
+            int right_depth = 0;
 
             if (root == null) return 0;
             if (root.left != null) {
