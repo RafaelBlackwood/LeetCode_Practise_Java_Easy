@@ -21,7 +21,6 @@ public class LeetCode110 {
 
             return checkHeight(root) != -1;
         }
-
         public int checkHeight(TreeNode root) {
             if (root == null) return 0;
 
@@ -29,9 +28,7 @@ public class LeetCode110 {
             if (leftHeight == -1) return -1;
             int rightHeight = checkHeight(root.right);
             if(rightHeight == -1) return -1;
-
             if (Math.abs(leftHeight - rightHeight) > 1) return -1;
-
             return Math.max(leftHeight, rightHeight) + 1;
         }
     }
