@@ -40,13 +40,13 @@ public class LeetCode225 {
 
         private Queue<Integer> queue;
 
+        public MyStack() {
+            queue = new LinkedList<>();
+        }
+
         private void rotateExceptLast() {
             int n = queue.size();
             for (int i = 0; i < n - 1; i++) queue.offer(queue.poll());
-        }
-
-        public MyStack() {
-            queue = new LinkedList<>();
         }
 
         public void push(int x) {
