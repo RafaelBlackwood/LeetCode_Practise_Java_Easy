@@ -17,9 +17,11 @@ public class LeetCode257 {
         -100 <= Node.val <= 100
          */
 
-        TreeNode node3 = new TreeNode(3);
+        TreeNode node4 = new TreeNode(5);
+        TreeNode node3 = new TreeNode(3, node4, null);
         TreeNode node2 = new TreeNode(2, node3, null);
         TreeNode root = new TreeNode(1, null, node2);
+
 
         Solution sol = new Solution();
         List<String> result = sol.binaryTreePaths(root);
@@ -46,7 +48,16 @@ public class LeetCode257 {
 
         public void tree(TreeNode node, String path, List<String> res) {
             if(node == null) return;
+            path += node.val;
 
+            if(node.left == null && node.right == null)
+            {
+                res.add(path);
+            }
+            else {
+                tree(node.left, path+"->", res);
+                tree(node.right, path+"->", res);
+            }
 
         }
 
