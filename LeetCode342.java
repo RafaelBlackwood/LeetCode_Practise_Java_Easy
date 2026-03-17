@@ -1,29 +1,35 @@
 public class LeetCode342 {
     public static void main(String[] args) {
         /*
-        Given an integer num, return true if num is a perfect square or false otherwise.
-
-        A perfect square is an integer that is the square of an integer. In other words, it is the product of some integer with itself.
-
+        Given an integer n, return true if it is a power of four. Otherwise, return false.
+        An integer n is a power of four, if there exists an integer x such that n == 4x.
+    
         Example 1:
-        Input: num = 16
+        Input: n = 16
         Output: true
-        Explanation: We return true because 4 * 4 = 16 and 4 is an integer.
-
+    
         Example 2:
-        Input: num = 14
+        Input: n = 5
         Output: false
-        Explanation: We return false because there is no integer n such that n * n = 14.
+    
+        Example 3:
+        Input: n = 1
+        Output: true
+
          */
 
         int num = 16;
         Solution solution = new Solution();
-        System.out.println(solution.isPerfectSquare(num));
+        System.out.println(solution.isPowerOfFour(num));
     }
 
     static class Solution {
         public boolean isPowerOfFour(int n) {
-            
+            for(int i = 0; i < n; i++){
+                if (Math.pow(4, i) == n){
+                    return true;
+                }
+            }
             return false;
         }
     }
