@@ -45,11 +45,3 @@ public class LeetCode326 {
 }
 
 
-/*
-individual experience from the group work. Matrix is Face To Face interaction:
- - Group work consisted of brainstorming in the round table format
- - We had a total democratic approach to the problem solving, where everyone had an 
- equal say in the discussion and decision-making process.
- - We were not using any digital tools for our discussion, the only tools we used
- were physical equipment such as whiteboards and markers to jot down ideas and solutions.
-*/
